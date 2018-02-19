@@ -1,3 +1,4 @@
+//implements tells SLlist is hyponym of List61B
 
 public class SLlist {
     private static class IntNode {
