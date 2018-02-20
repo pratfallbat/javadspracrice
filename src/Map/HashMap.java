@@ -1,4 +1,4 @@
-gipackage Map;
+package Map;
 
 import java.util.*;
 

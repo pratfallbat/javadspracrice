@@ -1,3 +1,4 @@
+package Testing;
 //Selection Sort
 public class Sort {
     public static void  swap(String[] x,int a,int b){
@@ -9,22 +10,22 @@ public class Sort {
         sort(x,0);
     }
     public static void  sort(String[] x,int k){
-            if(k==x.length){
+        if(k==x.length){
             return;
-            }
+        }
         //find the smallest item
         int smallest=findSmallest(x,k);
-           swap(x,k,smallest);        //Move it to the front//Selection sort the rest using recursion
+        swap(x,k,smallest);        //Move it to the front//Selection sort the rest using recursion
         sort(x,k+1);
     }
     public static int findSmallest(String[] x,int start ){
         int smallestIndex=start;
         for(int i=start;i<x.length;i++){
             int cmp= x[i].compareTo(x[smallestIndex]);
-        //    System.out.println(cmp);
+            //    System.out.println(cmp);
             //            if a[i]<a[smallest] ,cmp will be -1
             if(cmp<0){
-           //     System.out.print("i is "+i);
+                //     System.out.print("i is "+i);
                 smallestIndex=i;
             }
         }
@@ -37,4 +38,4 @@ public class Sort {
 //            System.out.println(input2[i]);
 //        }
 //    }
-    }
+}
