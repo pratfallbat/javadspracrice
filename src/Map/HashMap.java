@@ -6,6 +6,17 @@ import java.util.*;
                                                                                                             //https://www.dotnetperls.com/hashmap-java
 public class HashMap {
 
+    public static void TreeMap(){
+        Map<String,Integer> num= new TreeMap<>();
+        num.put("horse",4);
+        num.put("fish",0);
+        num.put("bat",2);
+        num.put("spider",8);
+        num.put("human",2);
+
+        System.out.println(num);
+
+    }
     public static void howmanytimes(){
         java.util.HashMap<String, Integer> counts = new java.util.HashMap<>();
         String[] a={"first","second" ,"third"};
@@ -68,7 +79,8 @@ counts.put(w,0);
         String unq= uniqueUsingHasHmap(sx);
         System.out.println(unq);
         howmanytimes();
-            Set<String> uniqueEasy= uniqueEasyway();
+            Set<String> uniqueEasyHashSetway= uniqueEasyway();
+            TreeMap();
     }
 
 }
