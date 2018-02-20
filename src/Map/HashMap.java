@@ -17,6 +17,7 @@ public class HashMap {
         System.out.println(num);
 
     }
+
     public static void howmanytimes(){
         java.util.HashMap<String, Integer> counts = new java.util.HashMap<>();
         String[] a={"first","second" ,"third"};
@@ -73,15 +74,33 @@ counts.put(w,0);
         System.out.println(ss);
         return ss;
     }
+    public static void LinkeHashset(){
+        Map<String,Integer> num= new TreeMap<>();
+        LinkedHashSet<String> linkedHashSet = new LinkedHashSet<String>();
 
-        public static void main(String[] args) {
+        linkedHashSet.add("element1");
+        linkedHashSet.add("element2");
+        linkedHashSet.add("element3");
+        linkedHashSet.add("element2");
+        linkedHashSet.add("element3");
+        linkedHashSet.add("element2");
+        linkedHashSet.add("element3");
+
+        System.out.println(linkedHashSet);
+
+    }
+
+
+    public static void main(String[] args) {
        String sx="abaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbeeefffccdde";
         String unq= uniqueUsingHasHmap(sx);
         System.out.println(unq);
+//Hashmap is faster but guarantess no particular order
         howmanytimes();
             Set<String> uniqueEasyHashSetway= uniqueEasyway();
+//Treemap guarantees alphabetical order
             TreeMap();
+            LinkeHashset();
     }
-
 }
 
