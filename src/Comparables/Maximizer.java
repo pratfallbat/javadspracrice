@@ -41,6 +41,7 @@ public class Maximizer {
             d2.bark();
         }
 
+
 // or
 // Comparator<Dog> nc=   new NameComparator();;
 //        if(nc.compare(d2,d3)>0){
