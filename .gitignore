@@ -25,3 +25,8 @@ hs_err_pid*
 
 .idea
 *.iml
+src/Map/ArrayMap.java
+src/Map/HashMaptwo.java
+src/Map/Map61B.java
+src/Map/MapHelper.java
+src/Map/Maptwo.java
