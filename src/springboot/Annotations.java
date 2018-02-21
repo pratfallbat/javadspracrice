@@ -3,7 +3,7 @@ package springboot;
 public class Annotations {
     public static void main(String[] args) {
         System.out.println("\n" +
-                "The @Repository annotation is a marker for any class that fulfills the role or stereotype (also known as Data Access Object or DAO) of a repository.\n" +
+                "The @Repository annotation is a marker for  any class that fulfills the role or stereotype \n(also known as Data Access Object or DAO) of a repository.\n" +
                 "they access the database directly\n" +
                 "@Repository=\t{@Component + DAOs (Data Access Objects)}\n" +
                 "Code:\n" +
@@ -52,7 +52,7 @@ public class Annotations {
                 "@PathVariable This annotation indicates that a method parameter should be bound to a URI template variable [the one in '{}'].\n" +
                 "\n" +
                 "@Service ={@Component+ Hold business Logic, Calculations etc.}\n" +
-                "Data related calculations and all.This annotation of business layer in which our user not directly call persistence method so it will call this methods using this annotation. It will request @Repository as per user request");
+                "Data related calculations and all.This annotation of business layer in which our user not directly call persistence method \n so it will call this methods using this annotation.\n It will request @Repository as per user request");
     }
 
 }
