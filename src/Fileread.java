@@ -15,7 +15,7 @@ public static void readfile() throws Exception{
 
 }
     public static void writefile() throws Exception{
-    File newfile= new File("C:/Users/home/IdeaProjects/java practic ds/src/writedfiletwo.txt");
+    File newfile= new File("C:/Users/home/IdeaProjects/java practic ds/src/writedfileok.txt");
         if(newfile.exists()){
             System.out.println("file exist already");
         }
