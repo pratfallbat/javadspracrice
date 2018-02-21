@@ -1,11 +1,12 @@
 package Map;
-
+import java.util.Iterator;
 import org.junit.Test;
 import static  org.junit.Assert.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
-public class ArrayMap<K,V> implements Map61B<K,V> {
+public class ArrayMap<K,V> implements Map61B<K,V> ,Iterable<K>{
 private K[] keys;
     private V[] values;
     int size;
@@ -56,20 +57,28 @@ private K[] keys;
     public int size() {
         return size;
     }
-
-    public class KeyIterator{
-       public int wizardpositon;
-public KeyIterator(){
-    wizardpositon=0;
-}
-        public boolean hasNext(){return wizardpositon<size;}
-
-        public K next(){
-       K returnvalue= keys[wizardpositon];
-       wizardpositon+=1;
-       return returnvalue;
-        }
+    public Iterator<K> iterator(){
+List<K> keylist =keys();
+return keylist.iterator();
+        //if using nested class
+        //        return new KeyIterator();
     }
+
+
+//    public class KeyIterator implements Iterator<K>{
+//   public int wizardpositon;
+//
+//       public KeyIterator(){
+//            wizardpositon=0;
+//        }
+//        public boolean hasNext(){return wizardpositon<size;}
+//
+//        public K next(){
+//       K returnvalue= keys[wizardpositon];
+//       wizardpositon+=1;
+//       return returnvalue;
+//        }
+//    }
     @Override
     public void put(K key, V value) {
         int index=keyIndex(key);
