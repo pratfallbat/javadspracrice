@@ -2,6 +2,7 @@ package Abstract;
 
 public abstract class Graphic implements Paper {
 public int x,y;
+
 public void moveTo(int newX,int newY){
 
 }
