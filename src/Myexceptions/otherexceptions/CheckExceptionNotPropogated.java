@@ -3,7 +3,8 @@ import java.io.IOException;
 public class CheckExceptionNotPropogated {
 
     void m() {
-        throw new IOException("device error");   //here error is coming since its chcecked eception you have to catch it here
+        //here error is coming since its chcecked eception you have to catch it here
+        //throw new IOException("device error");
     }
 
 

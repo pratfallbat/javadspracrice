@@ -30,6 +30,9 @@ public class HashMaptwo {
 //            int oldCount=   counts.get(wb);
 //             counts.put(wb,oldCount+1);
 //        }
+//
+//        Set - an unordered collection - and a
+//        Map - a collection with keyed access.
         for(String wb:b){
             //more verbose
             if(counts.containsKey(wb)){
@@ -41,7 +44,6 @@ public class HashMaptwo {
 
     }
     public static String uniqueUsingHasHmap(String str){
-
         if(str.length()==0){
             return "";
         }
@@ -56,6 +58,10 @@ public class HashMaptwo {
                 ans=ans+currch;
             }
         }
+//        HashSet is a set, e.g. {1,2,3,4,5}
+//HashMap is a key -> value (key to value) map, e.g. {a -> 1, b -> 2, c -> 2, d -> 1}
+//Notice in my example above that in the HashMap there must not be duplicate keys, but it may have duplicate values.
+//In the HashSet, there must be no duplicate elements.
         Set<Character> ss = new HashSet<>();
         for(int i=0;i<str.length();i++){
             char currchSet=str.charAt(i);
