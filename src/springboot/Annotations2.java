@@ -3,10 +3,13 @@
 //(also known as Data Access Object or DAO) of a repository.
 //        they access the database directly
 //@Repository=	{@Component + DAOs (Data Access Objects)}
+//where @Component is used to create the object +
+//  share the singleton object across otherclass that may want to use it using @Autowired annotation
 
 //        Code:
 
 //        import org.springframework.data.mongodb.repository.MongoRepository;
+//@Repository
 //public interface DemoRepository  extends MongoRepository<Demo,String>{
 //
 //}
